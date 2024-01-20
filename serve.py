@@ -11,7 +11,7 @@ def index():
 
 @app.route('/', methods=['POST'])
 def indexPost():
-    subprocess.Popen(["python", "./stress_cpu.py"])
+    subprocess.Popen(["python3", "./stress_cpu.py"])
     return "";
 
 if __name__ == '__main__':
